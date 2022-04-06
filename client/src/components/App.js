@@ -6,9 +6,7 @@ const App = () => {
     return (
         <div>
             <Router>
-                <Routes>
-
-                </Routes>
+               
             </Router>
             App Hi!
         </div>
