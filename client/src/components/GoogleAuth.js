@@ -6,9 +6,9 @@ import { signIn, signOut } from '../actions'
 // components that conditionally render data based on login status.
 class GoogleAuth extends React.Component {
     componentDidMount() {
-        window.gapi.load('client:auth2', () => {
-            window.gapi.client.init({ 
-                clientId: '723351351069-lmcr1ptanbubj6ggrolhrhgmd1vkr5ko.apps.googleusercontent.com',
+        window.gapi.load('auth2', () => {
+            window.gapi.auth2.init({ 
+                client_id: '723351351069-lmcr1ptanbubj6ggrolhrhgmd1vkr5ko.apps.googleusercontent.com',
                 scope: 'email'
             }).then(() => {
                 this.auth = window.gapi.auth2.getAuthInstance();

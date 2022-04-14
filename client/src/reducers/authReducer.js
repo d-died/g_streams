@@ -4,7 +4,7 @@ const INITIAL_STATE = {
     isSignedIn: null,
     userId: null
 }
-
+// actions are best when they are objects -- arrays involve writing out a lot of extra logic
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case SIGN_IN:

@@ -1,3 +1,33 @@
 {
-    "streams": []
+  "streams": [
+    {
+      "title": "hi there",
+      "description": "hi there",
+      "id": 1
+    },
+    {
+      "title": "Derek Created This",
+      "description": "I created this YAS!",
+      "userId": "101264862687459985020",
+      "id": 3
+    },
+    {
+      "title": "IDK who made this",
+      "description": "who made this??",
+      "userId": null,
+      "id": 4
+    },
+    {
+      "title": "Gluten Tag",
+      "description": "This is a stream with programmatic navigation",
+      "userId": "101264862687459985020",
+      "id": 5
+    },
+    {
+      "title": "Gluten Tag",
+      "description": "This is a stream with programmatic navigation",
+      "userId": "101264862687459985020",
+      "id": 6
+    }
+  ]
 }
