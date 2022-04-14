@@ -50,6 +50,9 @@ export const deleteStream = (id) => async dispatch => {
 }
 
 export const editStream = (id, formValues) => async dispatch => {
-    const response = await streams.put(`/streams/${id}`, formValues)
+    // we changed the streams.put method because otherwise it potentially deletes the userId that's attached to each stream
+    // we didn't want to send userId back and forth so we used the _.pick method
+    // and then updated this .put to .patch method so that id is not deleted from db when editing
+    const response = await streams.patch(`/streams/${id}`, formValues)
     dispatch({ type: EDIT_STREAM, payload: response.data })
 }

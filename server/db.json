@@ -28,6 +28,12 @@
       "description": "This is a stream with programmatic navigation",
       "userId": "101264862687459985020",
       "id": 6
+    },
+    {
+      "title": "Refactored Stream",
+      "description": "This is a reused component!",
+      "userId": "101264862687459985020",
+      "id": 7
     }
   ]
 }
