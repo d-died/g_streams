@@ -3,6 +3,9 @@ import flv from 'flv.js';
 import { connect } from "react-redux";
 import { fetchStream } from "../../actions";
 
+// a LOT of what is in this component is a non-essential part of understanding/accomplishing CRUD
+// what IS primarily here is how we uploaded and showed the streams (nothing to do with CRUD) 
+
 class StreamShow extends React.Component {
     constructor(props) {
         super(props);
@@ -18,6 +21,10 @@ class StreamShow extends React.Component {
 
     componentDidUpdate() {
         this.buildPlayer();
+    }
+
+    componentWillUnmount() {
+        this.player.destroy();
     }
 
     buildPlayer() {
